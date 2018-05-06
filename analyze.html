@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>analyze</title>
+
+</head>
+<body>
+<div id="main" style="width: 800px;height:600px;"></div>
+<script src="bmap/echarts.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/dark.js"></script>
+<!--<script src="bmap/bmap.js"></script>-->
+
+<script type="text/javascript" src="js/baidumap.js"></script>
+<script>
+    var map = new window.BMap.Map("main");
+    // 创建地图实例
+    var point = new BMap.Point(116.404, 39.915);
+    // 创建点坐标
+    map.centerAndZoom(point, 15);
+
+    // var bmap = myChart.getModel().getComponent('bmap').getBMap();
+    // bmap.addControl(new BMap.MapTypeControl());
+    // myChart.setOption(option);
+
+</script>
+</body>
+</html>
